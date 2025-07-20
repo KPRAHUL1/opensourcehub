@@ -1,4 +1,5 @@
 name: CI
+
 on:
   push:
     branches: [main]
@@ -8,9 +9,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-      - name: Install deps
+
+      # 👇 Install pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8 # or the version you're using
+
+      # 👇 Setup Node.js (optional but recommended)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20 # match your local version
+          cache: 'pnpm'
+
+      - name: Install dependencies
         run: pnpm install
-      - name: Lint check
+
+      - name: Lint
         run: pnpm lint
