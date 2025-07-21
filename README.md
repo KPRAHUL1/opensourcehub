@@ -83,7 +83,7 @@ We absolutely love contributions! Whether it's a bug fix, a new feature, improve
 
 A huge shoutout to all the amazing people who have contributed to OpenSourceHub!
 
-* [Link to your GitHub Profile/Organization page, e.g., `https://github.com/YOUR_GITHUB_USERNAME`](https://github.com/YOUR_GITHUB_USERNAME)
+* [Link to your GitHub Profile/Organization page, e.g., `https://github.com/YOUR_GITHUB_USERNAME`](https://github.com/KPRAHUL1)
     * *(You can expand this section later to list individual contributors or link to GitHub's contributors insights page)*
 
 ---
